@@ -30,5 +30,7 @@ class IndexController extends Controller
     public function index()
     {
         // abcdfe
+        //admin
+
     }
 }
