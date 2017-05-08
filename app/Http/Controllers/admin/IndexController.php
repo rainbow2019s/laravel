@@ -1,11 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 
-class IndexController extends Controller
-{
+class IndexController extends Controller {
     /*
     |--------------------------------------------------------------------------
     | Login Controller
@@ -22,18 +21,20 @@ class IndexController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
+    public function __construct() {
 
     }
 
-    public function index()
-    {
-        // abcdfe
-        //admin
-        //2333333
-        //admin2
-        //
+    public function index() {
+        return view('admin/index');
 
+    }
+
+    public function test() {
+        return view('admin/test');
+    }
+
+    public function test2() {
+        return view('admin/test2');
     }
 }
