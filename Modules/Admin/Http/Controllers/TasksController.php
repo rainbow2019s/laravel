@@ -7,7 +7,9 @@ use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 
 use Modules\Admin\Entities\Task;
+use Modules\Admin\Http\Requests\CreateTaskRequest;
 
+use Carbon\Carbon;
 
 class TasksController extends Controller
 {
@@ -17,10 +19,7 @@ class TasksController extends Controller
      */
     public function index()
     {
-        //$tasks=Task::all();
-        $tasks=Task::latest()->get();
-        //dd($tasks);
-
+        $tasks=Task::latest()->where('publish_at','<=',Carbon::now())->get();
         $message='123';
         return view('admin::tasks.index',compact('message','tasks'));
     }
@@ -39,11 +38,9 @@ class TasksController extends Controller
      * @param  Request $request
      * @return Response
      */
-    public function store(Request $request)
+    public function store(CreateTaskRequest $request)
     {
-        //dd($request->all());
-        // request->get('title');
-        // request->get('content');
+        //$this->validate($request,['title'=>'required']);
         $input=$request->all();
         if($request->session()->has('_token')){
             $token=$request->session()->get('_token');
@@ -53,8 +50,6 @@ class TasksController extends Controller
                return redirect('admin/tasks/');
             }
         }
-        //$input['_token2']=$request->get
-        //dd($request->session()->all());
     }
 
     /**
