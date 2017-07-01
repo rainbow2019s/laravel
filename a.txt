@@ -1,0 +1,31 @@
+ 驱动器 F 中的卷是 Data
+ 卷的序列号是 4CD6-6DBE
+
+ F:\Projects\demo\laravel 的目录
+
+2017/07/01  21:23    <DIR>          .
+2017/07/01  21:23    <DIR>          ..
+2017/07/01  20:40               554 .env.example
+2017/07/01  20:40               116 .gitattributes
+2017/07/01  20:40               142 .gitignore
+2017/07/01  21:23                 0 a.txt
+2017/07/01  20:40    <DIR>          app
+2017/07/01  20:40             1,697 artisan
+2017/07/01  20:40    <DIR>          bootstrap
+2017/07/01  20:40             1,622 composer.json
+2017/07/01  20:40           147,991 composer.lock
+2017/07/01  20:40    <DIR>          config
+2017/07/01  20:40    <DIR>          database
+2017/07/01  20:40    <DIR>          Modules
+2017/07/01  20:40             1,083 package.json
+2017/07/01  20:40             1,086 phpunit.xml
+2017/07/01  20:40    <DIR>          public
+2017/07/01  20:40    <DIR>          resources
+2017/07/01  20:40    <DIR>          routes
+2017/07/01  20:40               584 server.php
+2017/07/01  20:40    <DIR>          storage
+2017/07/01  20:40    <DIR>          tests
+2017/07/01  20:40               570 webpack.mix.js
+2017/07/01  20:40           210,864 yarn.lock
+              12 个文件        366,309 字节
+              12 个目录 27,869,945,856 可用字节
